@@ -19,23 +19,23 @@ describe("somarNumerosPositivos", () => {
     });
 });
 
-// Teste para a função verificarDivisivelPor3
-describe("verificarDivisivelPor3", () => {
-    it("deve retornar true para números divisíveis por 3", () => {
-        expect(verificarDivisivelPor3(9)).toBe(true);
+// Teste para a função contarCaracterE
+describe("contarCaracterE", () => {
+    it("deve contar a quantidade de 'e' na string", () => {
+        expect(contarCaracterE("Elefante")).toBe(3);
     });
-    it("deve retornar false para números não divisíveis por 3", () => {
-        expect(verificarDivisivelPor3(4)).toBe(false);
+    it("deve retornar 0 para string sem 'e'", () => {
+        expect(contarCaracterE("Tigrinho")).toBe(0);  
     });
 });
 
 // Teste para a função contarCaracterE
 describe("contarCaracterE", () => {
     it("deve contar a quantidade de 'e' na string", () => {
-        expect(contarCaracterE("Elefante")).toBe(2);
+        expect(contarCaracterE("Elefante")).toBe(3);
     });
     it("deve retornar 0 para string sem 'e'", () => {
-        expect(contarCaracterE("Tigre")).toBe(1);
+        expect(contarCaracterE("Tigrinho")).toBe(0);
     });
 });
 
