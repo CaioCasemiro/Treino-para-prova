@@ -32,7 +32,7 @@ describe("verificarPrimo", () => {
 // Teste para a função inverterString
 describe("inverterString", () => {
     it("deve inverter a string", () => {
-        expect(inverterString("algoritmo")).toBe("omtirgola");
+        expect(inverterString("algoritmo")).toBe("omtirogla");
     });
     it("deve retornar string vazia se a entrada for vazia", () => {
         expect(inverterString("")).toBe("");
