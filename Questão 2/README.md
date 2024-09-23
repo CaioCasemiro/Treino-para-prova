@@ -1,7 +1,7 @@
-**Função 1 (filtrarNumerosNegativos):** Retorna uma nova lista contendo apenas os números negativos da lista original.
+**Função 1 (calcularMedia):** Recebe uma lista de números e retorna a média aritmética. Se a lista for vazia ou inválida, retorna null.
 
-**Função 2 (verificarDivisivelPor5):** Verifica se um número é divisível por 5.
+**Função 2 (verificarPrimo):** Verifica se um número é primo. Retorna true se o número for primo, senão retorna false.
 
-**Função 3 (contarCaracterO):** Conta quantas vezes o caractere 'o' ou 'O' aparece em uma string usando um loop for.
+**Função 3 (inverterString):** Inverte uma string e retorna o resultado.
 
-**Função 4 (adicionarPropriedade):** Adiciona uma nova propriedade em um objeto se a propriedade não existir. Retorna o objeto atualizado.
+**Função 4 (removerElementosNulos):** Remove todos os elementos nulos ou indefinidos de uma lista e retorna a nova lista.

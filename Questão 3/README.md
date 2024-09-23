@@ -1,7 +1,7 @@
-**Função 1 (multiplicarLista):** Multiplica cada número de uma lista por um valor passado como parâmetro.
+**Função 1 (calcularFatorial):** Calcula o fatorial de um número inteiro positivo. Se o número for negativo, retorna null.
 
-**Função 2 (verificarDivisivelPor2):** Verifica se um número é divisível por 2.
+**Função 2 (verificarPalindromo):** Verifica se uma string é um palíndromo (lê-se da mesma forma de trás para frente). Retorna true se for, senão retorna false.
 
-**Função 3 (contarCaracterI):** Conta quantas vezes o caractere 'i' ou 'I' aparece em uma string usando um loop while.
+**Função 3 (somaDigitos):** Calcula a soma dos dígitos de um número inteiro.
 
-**Função 4 (trocarPropriedade):** Troca o valor de uma propriedade existente em um objeto, se a propriedade existir. Caso contrário, não faz nada.
+**Função 4 (adicionarElementoUnico):** Adiciona um elemento a uma lista apenas se ele ainda não existir na lista.

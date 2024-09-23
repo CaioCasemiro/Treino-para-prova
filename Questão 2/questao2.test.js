@@ -1,55 +1,50 @@
 import { describe, it, expect } from "bun:test";
 import {
-    filtrarNumerosNegativos,
-    verificarDivisivelPor5,
-    contarCaracterO,
-    adicionarPropriedade,
+    calcularMedia,
+    verificarPrimo,
+    inverterString,
+    removerElementosNulos,
 } from "./questao2.js";
 
-// Teste para a função filtrarNumerosNegativos
-describe("filtrarNumerosNegativos", () => {
-    it("deve retornar apenas os números negativos da lista", () => {
-        expect(filtrarNumerosNegativos([1, -3, 5, -7, 2])).toEqual([-3, -7]);
+// Teste para a função calcularMedia
+describe("calcularMedia", () => {
+    it("deve retornar a média dos números na lista", () => {
+        expect(calcularMedia([1, 2, 3, 4, 5])).toBe(3);
     });
-    it("deve retornar uma lista vazia se não houver números negativos", () => {
-        expect(filtrarNumerosNegativos([1, 2, 3])).toEqual([]);
+    it("deve retornar null para lista vazia", () => {
+        expect(calcularMedia([])).toBe(null);
     });
-});
-
-// Teste para a função verificarDivisivelPor5
-describe("verificarDivisivelPor5", () => {
-    it("deve retornar true para números divisíveis por 5", () => {
-        expect(verificarDivisivelPor5(10)).toBe(true);
-    });
-    it("deve retornar false para números não divisíveis por 5", () => {
-        expect(verificarDivisivelPor5(7)).toBe(false);
+    it("deve retornar null para entrada inválida", () => {
+        expect(calcularMedia("não é uma lista")).toBe(null);
     });
 });
 
-// Teste para a função contarCaracterO
-describe("contarCaracterO", () => {
-    it("deve contar a quantidade de 'o' na string", () => {
-        expect(contarCaracterO("Ovos")).toBe(2);
+// Teste para a função verificarPrimo
+describe("verificarPrimo", () => {
+    it("deve retornar true para números primos", () => {
+        expect(verificarPrimo(7)).toBe(true);
     });
-    it("deve retornar 0 para string sem 'o'", () => {
-        expect(contarCaracterO("Cavalo")).toBe(1);
+    it("deve retornar false para números não primos", () => {
+        expect(verificarPrimo(4)).toBe(false);
     });
 });
 
-// Teste para a função adicionarPropriedade
-describe("adicionarPropriedade", () => {
-    it("deve adicionar uma nova propriedade no objeto", () => {
-        const objeto = { nome: "João" };
-        expect(adicionarPropriedade(objeto, "idade", 25)).toEqual({
-            nome: "João",
-            idade: 25,
-        });
+// Teste para a função inverterString
+describe("inverterString", () => {
+    it("deve inverter a string", () => {
+        expect(inverterString("algoritmo")).toBe("omtirgola");
     });
-    it("deve retornar o mesmo objeto se a propriedade já existir", () => {
-        const objeto = { nome: "João", idade: 25 };
-        expect(adicionarPropriedade(objeto, "idade", 30)).toEqual({
-            nome: "João",
-            idade: 25,
-        });
+    it("deve retornar string vazia se a entrada for vazia", () => {
+        expect(inverterString("")).toBe("");
+    });
+});
+
+// Teste para a função removerElementosNulos
+describe("removerElementosNulos", () => {
+    it("deve remover elementos nulos e indefinidos da lista", () => {
+        expect(removerElementosNulos([1, null, 2, undefined, 3])).toEqual([1, 2, 3]);
+    });
+    it("deve retornar lista vazia se todos os elementos forem nulos ou indefinidos", () => {
+        expect(removerElementosNulos([null, undefined])).toEqual([]);
     });
 });

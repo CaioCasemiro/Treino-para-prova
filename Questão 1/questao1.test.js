@@ -11,11 +11,11 @@ describe("somarNumerosPositivos", () => {
     it("deve retornar a soma dos números positivos", () => {
         expect(somarNumerosPositivos([1, -3, 5, 7, -2])).toBe(13);
     });
-    it("deve retornar 0 para lista vazia", () => {
-        expect(somarNumerosPositivos([])).toBe(0);
+    it("deve retornar null para lista vazia", () => {
+        expect(somarNumerosPositivos([])).toBe(null);
     });
-    it("deve retornar 0 para entrada inválida", () => {
-        expect(somarNumerosPositivos("não é uma lista")).toBe(0);
+    it("deve retornar null para entrada inválida", () => {
+        expect(somarNumerosPositivos("não é uma lista")).toBe(null);
     });
 });
 
